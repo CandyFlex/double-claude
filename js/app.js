@@ -163,7 +163,7 @@
     document.body.className = `state-${newState}`;
 
     if (newState === 'on') {
-      subtitle.innerHTML = 'there is no spoon. ship it.<span class="cursor">_</span>';
+      subtitle.innerHTML = 'there is no spoon. jack in.<span class="cursor">_</span>';
     } else if (newState === 'off') {
       subtitle.innerHTML = 'the spoon is back. hold.<span class="cursor">_</span>';
     } else {
