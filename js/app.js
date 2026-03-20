@@ -77,6 +77,12 @@
     piece.classList.remove('flip');
     void piece.offsetWidth;
     piece.classList.add('flip');
+
+    // Remove flip class after the longest animation (0.6s) so back-bottom hides
+    clearTimeout(piece._flipTimer);
+    piece._flipTimer = setTimeout(() => {
+      piece.classList.remove('flip');
+    }, 650);
   }
 
   function isWeekday(date) {
